@@ -1,0 +1,15 @@
+%%
+[\t]+ /* ignore white space */;
+
+is
+        |       am
+        |       are
+        |       were
+        |       was
+        |       be
+        |       being
+        |       been
+        |       do
+        |       does
+        |       did
+                    |       go { print("%s", yytext); }
