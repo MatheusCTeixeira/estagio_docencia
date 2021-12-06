@@ -1,2 +1,0 @@
-Skeleton 5
-d4f2d"Int"d"TextIO"aä¢CalcLrVals"jh1aä¢Token"gp2ä¢LrParser"ÿ%gp1e"CalcLrValsFun"aä¢CalcLex"jh1aä¢Tokens"gp2ÿÿgp1e"CalcLexFun"ad"CalcParser"jh3aÿ0gp1ÿ0aä¢ParserData"gp2ÿÿ‚ad"Lex"gp1ÿgp1e"Join"

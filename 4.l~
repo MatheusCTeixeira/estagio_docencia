@@ -1,6 +1,0 @@
-%s MAGIC
-
-%%
-
-magic { BEGIN MAGIC; printf("%s", yytext); }
-<MAGIC>.+ { BEGIC 0; printf("magic: "); ECHO; }
