@@ -1,0 +1,32 @@
+(* Sample interactive calculator for ML-Yacc *)
+
+%%
+
+%name Calc
+
+%pos int
+
+%term NUM of int | 
+      PLUS | TIMES | DIV | MINUS | 
+      LPAR | RPAR | EOF
+  
+%nonterm Start of unit | Exp of int | Term of int | Fact of int
+
+%eop EOF 
+
+%%
+
+Start : Exp              (print ("result = " ^ Int.toString(Exp)^"\n" ))
+
+  Exp : Exp PLUS Term    (Exp + Term)
+      | Exp MINUS Term   (Exp - Term)
+      | Term 	         (Term)
+  
+ Term : Term TIMES Fact (Term * Fact)
+      | Term DIV Fact   (Term div Fact)
+      | Fact		(Fact)
+ 
+ Fact : NUM             (NUM)
+      | LPAR Exp RPAR   (Exp)
+
+
